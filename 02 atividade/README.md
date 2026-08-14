@@ -1,16 +1,107 @@
-# React + Vite
+# ⚛️ React Lab — Componente DadosUsuario
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=24&duration=2500&pause=800&color=61DAFB&center=true&vCenter=true&width=700&lines=Componente+criado...;Dados+do+usuário+carregados...;Interface+renderizada..." />
+</p>
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 Sobre o Projeto
 
-## React Compiler
+Nesta atividade foi criado um componente chamado **`DadosUsuario.jsx`**, responsável por apresentar informações de um usuário na aplicação.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+O exercício tem como objetivo praticar a criação e utilização de **componentes React**.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 👤 Dados do Usuário
+
+O componente apresenta as seguintes informações:
+
+| Campo     | Informação           |
+| --------- | -------------------- |
+| Nome      | Nome do usuário      |
+| Sobrenome | Sobrenome do usuário |
+| E-mail    | E-mail cadastrado    |
+| Sexo      | Sexo informado       |
+| Idade     | Idade do usuário     |
+
+---
+
+## 🧩 Componente
+
+O componente principal desenvolvido nesta atividade é:
+
+```text
+DadosUsuario.jsx
+```
+
+Exemplo de estrutura:
+
+```jsx
+function DadosUsuario() {
+  return (
+    <div>
+      <h2>Dados do Usuário</h2>
+      <p>Nome: Gabrielly</p>
+      <p>Sobrenome: Roseghini</p>
+      <p>E-mail: exemplo@email.com</p>
+      <p>Sexo: Feminino</p>
+      <p>Idade: 18</p>
+    </div>
+  );
+}
+
+export default DadosUsuario;
+```
+
+---
+
+## 🎯 Objetivo
+
+* Criar um componente React.
+* Organizar informações dentro do componente.
+* Utilizar JSX.
+* Renderizar o componente na aplicação.
+
+---
+
+## 🛠️ Tecnologias
+
+* React
+* JavaScript
+* JSX
+* Vite
+* NPM
+
+---
+
+## 🚀 Como Executar
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Execute o projeto:
+
+```bash
+npm run dev
+```
+
+---
+
+## 📚 Aprendizado
+
+A atividade permitiu compreender como criar um **componente independente em React** e utilizá-lo para organizar informações dentro da interface.
+
+---
+
+<div align="center">
+
+**Componentes tornam o React organizado e reutilizável.**
+
+`Component → JSX → Renderização`
+
+</div>
