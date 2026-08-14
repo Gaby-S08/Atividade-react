@@ -1,16 +1,110 @@
-# React + Vite
+# ⚛️ React Lab — Trabalhando com Props
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=24&duration=2500&pause=800&color=61DAFB&center=true&vCenter=true&width=700&lines=Props+detectadas...;Dados+recebidos...;Comunicação+entre+componentes+online..." />
+</p>
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 Sobre o Projeto
 
-## React Compiler
+Nesta atividade foi desenvolvido o componente **`Pessoa.jsx`**, com o objetivo de praticar o conceito de **Props no React**.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+As Props permitem que informações sejam enviadas de um componente para outro, tornando os componentes mais flexíveis e reutilizáveis.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 👤 Informações da Pessoa
+
+O componente deve apresentar:
+
+* **Nome**
+* **Idade**
+* **Cidade**
+* **Endereço**
+
+---
+
+## 🔗 Utilizando Props
+
+Exemplo de utilização:
+
+```jsx
+function Pessoa(props) {
+  return (
+    <div>
+      <h2>{props.nome}</h2>
+      <p>Idade: {props.idade}</p>
+      <p>Cidade: {props.cidade}</p>
+      <p>Endereço: {props.endereco}</p>
+    </div>
+  );
+}
+
+export default Pessoa;
+```
+
+O componente pode receber os dados através das Props:
+
+```jsx
+<Pessoa
+  nome="Gabrielly"
+  idade={18}
+  cidade="São Paulo"
+  endereco="Rua Exemplo"
+/>
+```
+
+---
+
+## 🎯 Objetivo
+
+Praticar:
+
+* Criação de componentes.
+* Utilização de Props.
+* Passagem de informações entre componentes.
+* Interpolação de valores no JSX.
+* Reutilização de componentes.
+
+---
+
+## 🛠️ Tecnologias
+
+* React
+* JavaScript
+* JSX
+* Vite
+* NPM
+
+---
+
+## 🚀 Como Executar
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Execute o projeto:
+
+```bash
+npm run dev
+```
+
+---
+
+## 📚 Aprendizado
+
+Nesta atividade foi possível compreender como as **Props permitem enviar informações para componentes**, facilitando a criação de estruturas reutilizáveis e dinâmicas.
+
+---
+
+<div align="center">
+
+**Props = comunicação entre componentes**
+
+`Componente Pai → Props → Componente Filho`
+
+</div>
